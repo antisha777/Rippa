@@ -1,0 +1,147 @@
+@media only screen and (max-width: 1280px) { 
+} 
+/* Medium Devices, Desktops */ 
+@media only screen and (max-width: 992px) { 
+    
+} 
+/* Small Devices, Tablets */ 
+@media only screen and (max-width: 768px) {
+    
+    .hero__social {
+        margin-top: 20px;
+        position: absolute;
+        transform: translateX(50%);
+        right: 50%;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    // .contact-form {
+    //     order: -1;
+    // }
+
+    .section__header {
+        text-align: center;
+    }
+
+    .about, .row, .tabs-info, .section__header_stretch {
+        justify-content: space-evenly;
+    }
+
+    .search-bar, .navigation__item {
+        padding-left: 15px;
+        max-width: 285px;
+    }
+
+    .links-menu {
+        padding-top: 150px;
+    }
+
+} 
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width: 480px) {
+
+    .container {
+        padding-top: 20px;
+    }
+} 
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width: 320px) { 
+}
+
+@media only screen and (min-width: 768px) {
+    .mobile-menu, .hero__social, .white-stripe {
+        display: none;
+    }
+}
+
+@media print {
+    .headrer, .section__grey   {
+        background: none;
+    } 
+
+}
+
+/*==== MEDIA ====*/
+// .menu-menu-1-container [type="checkbox"],
+// .menu-menu-1-container label.toggleSubmenu{
+//  display: none;
+// }
+// .menu-menu-1-container label.toggleMenu{
+//  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c9c9c9+0,f6f6f6+2,c4c5c7+98,757577+100;Custom+3 */
+//  background: rgb(201,201,201); /* Old browsers */
+//  background: -moz-linear-gradient(top,  rgba(201,201,201,1) 0%, rgba(246,246,246,1) 2%, rgba(196,197,199,1) 98%, rgba(117,117,119,1) 100%); /* FF3.6-15 */
+//  background: -webkit-linear-gradient(top,  rgba(201,201,201,1) 0%,rgba(246,246,246,1) 2%,rgba(196,197,199,1) 98%,rgba(117,117,119,1) 100%); /* Chrome10-25,Safari5.1-6 */
+//  background: linear-gradient(to bottom,  rgba(201,201,201,1) 0%,rgba(246,246,246,1) 2%,rgba(196,197,199,1) 98%,rgba(117,117,119,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+//  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9c9c9', endColorstr='#757577',GradientType=0 ); /* IE6-9 */
+
+//  display: none;
+//  padding: 15px 40px;
+//  text-transform: uppercase;
+//  font-size: 14px;
+//  cursor: pointer;
+//  position: relative;
+// }
+
+// .menu-menu-1-container label.toggleMenu .fa{
+//  position: absolute;
+//  top: 15px;
+//  left: 12px;
+//  font-size: 18px;
+// }
+
+// @media all and (max-width: 800px){
+
+//  .menu-menu-1-container ul{
+//   display: block;
+//   max-height: 0;
+//   transition: max-height 0.3s;
+//  }
+//  .menu-menu-1-containerli>ul li ul{
+//   position: absolute;
+//   right: auto;
+//   top: auto;
+//  }
+//  .menu-menu-1-container label.toggleMenu{
+//   display: block;
+//  }
+//  input.toggleMenu:checked + label.toggleMenu{
+//   background: #000;
+//   color: #fff;
+//  }
+//  input.toggleMenu:checked ~ ul,
+//  input.toggleSubmenu:checked ~ ul{
+//   display: block;
+//   position: relative;
+//   max-height: 5000px;
+//   transition: max-height 2s ease-in;
+//  }
+//  .menu-menu-1-container label.toggleSubmenu{
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   width: 100%;
+//   height: 100%;
+//   cursor: pointer;
+//   display: block;
+//  }
+//  input.toggleSubmenu:checked ~ a{
+//   background: #454547;
+//   color: #fff;
+//  }
+//  .menu-menu-1-container label.toggleSubmenu .fa:before{
+//   content: "\f0d7";
+//   color: #454547;
+//  }
+//  .menu-menu-1-container label.toggleSubmenu .fa{
+//   position: absolute;
+//   top: 15px;
+//   right: 30px;
+//  }
+//  .menu-menu-1-container input.toggleSubmenu:checked ~ label.toggleSubmenu .fa::before{
+//   content: "\f0d8";
+//   color: #ffffff;
+//  }
+// }

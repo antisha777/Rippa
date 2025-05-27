@@ -1,0 +1,241 @@
+.hero {
+    position: relative;
+    overflow: hidden;
+    &::after {
+        position: absolute;
+        content: url('./img/Эллипс 2.png');
+        top: -50%;
+        right: -250px;
+    }
+    &::before {
+        position: absolute;
+        content: url('./img/Эллипс 3.png');
+        top: 20%;
+        right: 30px;
+    }
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        z-index: -9;
+        background: black;
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.33;
+        }
+    }
+    &__content {
+        position: relative;
+        margin-top: 200px;
+        margin-bottom: 120px;
+        display: flex;
+        justify-content: space-between;
+        z-index: 2;
+        @include _925 {
+            display: block;
+            margin-bottom: 0;
+        }
+        @include _925m {
+            margin-top: 300px;
+        }
+    }
+    &__item {
+        max-width: 540px;
+        text-transform: uppercase;
+        color: $white;
+        &:not(:last-child) {
+            @include _925m {
+                margin-right: 30px;
+            }
+        } 
+        @include _925 {
+            margin: auto;
+        }
+        .logo {
+            @include _550 {
+                margin: 0 50px;
+            }
+        }
+    }
+    &__arrow {
+        position: relative;
+        text-align: center;
+        margin: 50px;
+        z-index: 3;
+    }
+    &__inner {
+        @include _925 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @include _550 {
+                margin: 0 50px;
+                @include _450 {flex-direction: column;}
+            } 
+        }
+        & a {
+            @include _390 {font-size: 14px;}
+        }
+    }
+}
+.logo {
+    position: relative;
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+    }
+}
+.subtitle {
+    margin: 10px 0 30px;
+    font-size: 26px;
+    font-weight: 600;
+    @include _925 {
+        font-size: 22px;
+        font-weight: 500;
+        @include _550 {
+            margin:0 50px 30px 50px;
+            font-size: 20px;
+            @include _420 {
+                font-size: 14px;
+                @include _390 {margin:0 50px 20px 50px;}
+            }
+        }
+    }
+}
+.services {
+    margin: 0 0 60px 10px;
+    position: relative;
+    @include _925 {
+        margin: 0 0 40px 10px;
+        @include _550 {
+            margin: 0 0 40px 60px;
+            @include _390 {font-size: 14px;}
+        }
+    }
+    p {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+            @include _480 {margin-bottom: 5px;} 
+        }
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        width: 100px;
+        height: 100px;
+        background-color: #DDB7AB;
+        opacity: 0.5;
+        top: -10px;
+        border-radius: 20px;
+        left: -10px;
+        z-index: -1;
+        @include _480 {height: 80px;}
+    }
+}
+.text {
+    text-align: end;
+    margin-top: 10px;
+    @include _550 {margin: 10px 50px;}
+    &__wrap {
+        border-radius: 20px;
+        background-color: rgba(121, 128, 77, 0.14);
+        padding: 15px;
+        width: 100%;
+        margin-bottom: 120px;
+        @include _925m {max-width: 450px;}
+        @include _925 {
+            margin-bottom: 80px;
+            @include _550 {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    p {
+    font-size: 28px;
+    text-transform: none;
+    font-weight: 500;
+        @include _925 {
+            font-size: 24px;
+            text-align: start;
+            font-weight: 400;
+            @include _480 {
+                font-size: 22px;
+                @include _420 {
+                    font-size: 18px;
+                }
+            }
+            
+        }
+    }
+}
+.certificate-btn {
+    position: relative;
+    margin-right: 20px;
+    float: right;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 115px;
+        height: 50px;
+        background-color: $pink;
+        border-radius: 10px;
+        right: -20px;
+        top: -15px;
+        z-index: -1;
+        opacity: 0.7;
+    }
+    @include _925 {
+        order: 2;
+    }
+}
+.social {
+    & img {
+        margin-right: 10px;
+        width: 40px;
+        height: 40px;
+    }
+    &__hero--right {
+        order: 1;
+        @include _925m {
+            position: absolute;
+            left: 0;
+            top: 380px;
+        }
+        @include _450 {
+            order: 3;
+            margin-top: 60px;
+        }
+    }
+    &__mobile {
+        margin: auto;
+        padding-top: 30px;
+        & a {padding: 0 !important;}
+    }
+}
+.arrow-anime {
+    will-change: tranform;
+    transform: translate3d(0, 0, 0);
+    animation: floating infinite ease-in-out 2s;
+}
+
+.screen {
+    position: relative;
+    &::after {
+        position: absolute;
+        content: url('./img/Эллипс 2.png');
+        top: 90%;
+        left: 10px;
+    }
+    &::before {
+        position: absolute;
+        content: url('./img/Эллипс 3.png');
+        top: 90%;
+        left: 10px;
+    }
+}

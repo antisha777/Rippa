@@ -1,0 +1,102 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+:root {
+	--index: calc(1vw + 1vw)
+}
+
+li {
+	list-style-type: none;
+	/* Убираем маркеры */
+  }
+
+body {
+    position: relative;
+    // min-width: 320px;
+    font-size: 16px;
+    font-weight: 500;
+    // font-family: $font;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    color: $more-black;
+    background-color: $white;
+}
+
+a {
+    text-decoration: none;
+    color: $white;
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    position: relative;
+    overflow: hidden;
+    padding: 15px 50px;
+    border-radius: 10px;
+    color: $white;
+    font-family: "Montserrat", sans-serif;
+}
+.button {
+    padding: 15px 50px;
+    border-radius: 10px;
+    color: $white;
+    font-weight: 600;
+    // font-size: 18px;
+    text-transform: uppercase;
+    &_green {
+        background-color: $green;
+    }
+    &_pink {
+        background-color: $pink;
+    }
+}
+:where(figure) {
+    margin: 0;
+}
+figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box {
+    position: relative;
+    &::after {
+        position: absolute;
+        content: ('');
+        max-width: 100px;
+        width: 100px;
+        max-height: 100px;
+        height: 100px;
+    }
+}
+.pd-bt-10 {padding-bottom: 10px;}
+.pd-bt-20 {padding-bottom: 20px;}
+.pd-bt-30 {padding-bottom: 30px;}
+.pd-bt-50 {padding-bottom: 50px;}
+.pd-bt-150 {padding-bottom: 150px;}
+.border-r-30 {border-radius: 30px;}
+.img100 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.block-in-center {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.line-h {line-height: 1; } 

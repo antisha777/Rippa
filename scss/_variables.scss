@@ -1,0 +1,33 @@
+//  $font: 'Montserrat', sans-serif;
+ $font: 'Raleway', sans-serif;
+
+ $grey: #F8F6F7;
+
+ $blue: #278AFF;
+ 
+ $black: #333;
+
+ $green: #79804D;
+
+ $orange: #FB9475;
+
+ $white: #f3f3f3;
+
+ $black: #242424;
+
+ $more-black: #0a0a0a;
+
+ $pink: #DDB7AB;
+
+//  $background-inst: linear-gradient(45deg,#e43932 3.26%,#7827f6 98.07%);
+ $background-inst: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+
+ $background-red1: #a30303;
+
+ @font-face {
+	font-family: title-font;
+	src: url(./assests/fonts/FrankRuhlLibre-Light.ttf);
+}
+
+$font-hero: 'title-font', sans-serif;
+$font: "Manrope", sans-serif;
