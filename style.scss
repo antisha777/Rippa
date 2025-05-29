@@ -1,6 +1,7 @@
 /*
 Theme Name: TomskPro
 */
+
 @import './scss/variables';
 @import './scss/common';
 @import './scss/mixins';
@@ -18,18 +19,18 @@ flex: 1;
     overflow: hidden;
     padding: 0 10px;
 }
-.header {
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-    color: $white;
-    &__wrap {
-        display: flex;
-        align-items: center;
-        padding: 25px 0;
-        justify-content: space-between;
-    }
-}
+// .header {
+//     position: fixed;
+//     width: 100%;
+//     z-index: 1000;
+//     color: $white;
+//     &__wrap {
+//         display: flex;
+//         align-items: center;
+//         padding: 25px 0;
+//         justify-content: space-between;
+//     }
+// }
 
 .menu {
     display: flex;
@@ -47,23 +48,25 @@ flex: 1;
 }
 
 .title {
-    @include _650 {text-align: center;}
-    & h3 {
-        position: relative;
-        margin-bottom: 50px;
-        font-weight: 500;
-        @include _550 {
-            margin-bottom: 30px;
-            font-size: 32px
-        }
-        &::after {
-            position: absolute;
-            content: url('./img/arrow.png');
-            margin-left: 30px;
-            top: -5px;
-            @include _550 {display: none;}
-        }
-    }
+    // font-size: 48px;
+    // color: $white;
+    // @include _650 {text-align: center;}
+    // & h3 {
+    //     position: relative;
+    //     margin-bottom: 50px;
+    //     font-weight: 500;
+    //     @include _550 {
+    //         margin-bottom: 30px;
+    //         font-size: 32px
+    //     }
+    //     &::after {
+    //         position: absolute;
+    //         content: url('./img/arrow.png');
+    //         margin-left: 30px;
+    //         top: -5px;
+    //         @include _550 {display: none;}
+    //     }
+    // }
 }
 .atom {
     position: absolute;
@@ -283,7 +286,7 @@ flex: 1;
     }
 }
 
-// @import './assets/css/header';
+@import './scss/header';
 @import './scss/hero';
 // @import './assets/css/about';
 // @import './assets/css/price';

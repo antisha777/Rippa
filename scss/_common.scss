@@ -1,3 +1,4 @@
+@import './fonts/mtswide-regular';
 html {
     box-sizing: border-box;
     height: 100%;
@@ -25,11 +26,12 @@ body {
     font-size: 16px;
     font-weight: 500;
     // font-family: $font;
-    font-family: "Montserrat", sans-serif;
+    // font-family: "Montserrat", sans-serif;
     margin: 0;
     overflow-x: hidden;
     color: $more-black;
     background-color: $white;
+    font-family: 'MTSWide-Regular';
 }
 
 a {
@@ -49,6 +51,7 @@ button {
     border-radius: 10px;
     color: $white;
     font-family: "Montserrat", sans-serif;
+    font-family: 'MTSWide-Regular';
 }
 .button {
     padding: 15px 50px;

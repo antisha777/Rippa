@@ -7,12 +7,7 @@
         top: -50%;
         right: -250px;
     }
-    &::before {
-        position: absolute;
-        content: url('./img/Эллипс 3.png');
-        top: 20%;
-        right: 30px;
-    }
+    
     &__img {
         position: absolute;
         top: 0;
@@ -21,17 +16,17 @@
         right: 0;
         width: 100%;
         z-index: -9;
-        background: black;
+        background: rgb(82, 171, 245);
         & img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            opacity: 0.33;
+            opacity: 0.8;
         }
     }
     &__content {
         position: relative;
-        margin-top: 200px;
+        margin-top: 150px;
         margin-bottom: 120px;
         display: flex;
         justify-content: space-between;
@@ -40,48 +35,48 @@
             display: block;
             margin-bottom: 0;
         }
-        @include _925m {
-            margin-top: 300px;
-        }
     }
     &__item {
-        max-width: 540px;
+        // max-width: 560px;
+        width: 50%;
         text-transform: uppercase;
         color: $white;
-        &:not(:last-child) {
-            @include _925m {
-                margin-right: 30px;
-            }
-        } 
         @include _925 {
             margin: auto;
         }
-        .logo {
-            @include _550 {
-                margin: 0 50px;
-            }
+        .title {
+            font-size: 48px;
+            color: $white;
+            margin-bottom: 35px;
+        }
+        .subtitle {
+            font-size: 24px;
+            margin-bottom: 20px;
         }
     }
-    &__arrow {
-        position: relative;
-        text-align: center;
-        margin: 50px;
-        z-index: 3;
+    &__btn {
+        background: #1B45CB;
     }
-    &__inner {
-        @include _925 {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            @include _550 {
-                margin: 0 50px;
-                @include _450 {flex-direction: column;}
-            } 
-        }
-        & a {
-            @include _390 {font-size: 14px;}
-        }
-    }
+    // &__arrow {
+    //     position: relative;
+    //     text-align: center;
+    //     margin: 50px;
+    //     z-index: 3;
+    // }
+    // &__inner {
+    //     @include _925 {
+    //         display: flex;
+    //         align-items: center;
+    //         justify-content: space-between;
+    //         @include _550 {
+    //             margin: 0 50px;
+    //             @include _450 {flex-direction: column;}
+    //         } 
+    //     }
+    //     & a {
+    //         @include _390 {font-size: 14px;}
+    //     }
+    // }
 }
 .logo {
     position: relative;
@@ -95,18 +90,6 @@
     margin: 10px 0 30px;
     font-size: 26px;
     font-weight: 600;
-    @include _925 {
-        font-size: 22px;
-        font-weight: 500;
-        @include _550 {
-            margin:0 50px 30px 50px;
-            font-size: 20px;
-            @include _420 {
-                font-size: 14px;
-                @include _390 {margin:0 50px 20px 50px;}
-            }
-        }
-    }
 }
 .services {
     margin: 0 0 60px 10px;
