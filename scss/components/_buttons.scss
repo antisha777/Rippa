@@ -1,0 +1,26 @@
+.button {
+    display: inline-block;
+    padding: 15px 40px;
+    background: $primary-color;
+    color: $white;
+    text-decoration: none;
+    border: none;
+    border-radius: $border-radius;
+    font-weight: $font-weight-bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+        background: $primary-hover;
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba($primary-color, 0.3);
+    }
+
+    &:active {
+        transform: translateY(0);
+    }
+}

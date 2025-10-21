@@ -1,0 +1,148 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+
+    &__container {
+        @include flex-between;
+        padding: 20px 0;
+    }
+
+    &__logo {
+        img {
+            height: 35px;
+            width: auto;
+            transition: transform 0.3s ease;
+            filter: brightness(0) invert(1);
+        }
+
+        &:hover img {
+            transform: scale(1.05);
+        }
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $white;
+        font-weight: $font-weight-normal;
+        font-size: 16px;
+        transition: color 0.3s ease;
+        position: relative;
+        padding: 8px 0;
+
+        &:hover {
+            color: rgba($white, 0.8);
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: $white;
+            transition: width 0.3s ease;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    &__phone {
+        display: inline-flex;
+        align-items: center;
+        padding: 10px 20px;
+        background: rgba($white, 0.2);
+        color: $white;
+        text-decoration: none;
+        border-radius: 25px;
+        font-weight: $font-weight-bold;
+        font-size: 14px;
+        transition: all 0.3s ease;
+        border: 1px solid rgba($white, 0.3);
+
+        &:hover {
+            background: rgba($white, 0.3);
+            transform: translateY(-2px);
+        }
+    }
+
+    &__address {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 14px;
+        color: rgba($white, 0.9);
+        
+        &::before {
+            content: '📍';
+            font-size: 16px;
+        }
+    }
+
+    &__burger {
+        display: none;
+        flex-direction: column;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 5px;
+        z-index: 1001;
+
+        span {
+            width: 25px;
+            height: 2px;
+            background: $white;
+            margin: 3px 0;
+            transition: 0.3s;
+            border-radius: 2px;
+        }
+
+        @include mobile {
+            display: flex;
+        }
+
+        &.active {
+            span:nth-child(1) {
+                transform: rotate(-45deg) translate(-5px, 6px);
+            }
+            span:nth-child(2) {
+                opacity: 0;
+            }
+            span:nth-child(3) {
+                transform: rotate(45deg) translate(-5px, -6px);
+            }
+        }
+    }
+}

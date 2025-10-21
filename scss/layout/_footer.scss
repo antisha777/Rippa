@@ -1,0 +1,12 @@
+.footer {
+    background: $dark-bg;
+    color: $white;
+    padding: 40px 0;
+    text-align: center;
+
+    &__content {
+        p {
+            opacity: 0.8;
+        }
+    }
+}

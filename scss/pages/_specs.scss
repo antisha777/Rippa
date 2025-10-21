@@ -1,0 +1,41 @@
+.specs {
+    padding: $section-padding 0;
+    background: $bg-light;
+
+    @include mobile {
+        padding: $section-padding-mobile 0;
+    }
+
+    &__inner {
+        text-align: center;
+    }
+
+    &__title {
+        font-size: clamp(2rem, 4vw, 2.5rem);
+        margin-bottom: 40px;
+        color: $text-color;
+    }
+
+    &__content {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 1.7;
+        margin-bottom: 25px;
+        color: $text-light;
+    }
+
+    &__payback {
+        display: inline-block;
+        padding: 15px 30px;
+        background: $primary-color;
+        color: $white;
+        border-radius: 8px;
+        font-weight: $font-weight-bold;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+}
