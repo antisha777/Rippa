@@ -1,3 +1,11 @@
+// Typography
+$font-main: 'Jura', sans-serif; // Меняем Montserrat на Jura
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
 // Colors
 $primary-color: #1B45CB;
 $primary-hover: #0d35a8;
@@ -6,13 +14,6 @@ $text-light: #666;
 $white: #fff;
 $bg-light: #f8f9fa;
 $dark-bg: #333;
-
-// Typography
-$font-main: 'Montserrat', sans-serif;
-$font-weight-normal: 500;
-$font-weight-bold: 600;
-$font-weight-bolder: 700;
-$font-weight-extrabold: 800;
 
 // Breakpoints
 $mobile: 768px;

@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgb(49 48 48 / 37%); 
     backdrop-filter: blur(15px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease;
@@ -43,7 +43,7 @@
     &__link {
         text-decoration: none;
         color: $white;
-        font-weight: $font-weight-normal;
+        font-weight: $font-weight-medium;
         font-size: 16px;
         transition: color 0.3s ease;
         position: relative;
@@ -82,19 +82,27 @@
     &__phone {
         display: inline-flex;
         align-items: center;
-        padding: 10px 20px;
-        background: rgba($white, 0.2);
+        padding: 12px 24px;
+        background: $primary-color;
         color: $white;
         text-decoration: none;
-        border-radius: 25px;
-        font-weight: $font-weight-bold;
+        border-radius: 8px;
+        font-weight: $font-weight-semibold;
         font-size: 14px;
         transition: all 0.3s ease;
-        border: 1px solid rgba($white, 0.3);
+        border: 2px solid $primary-color;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
 
         &:hover {
-            background: rgba($white, 0.3);
+            background: $primary-hover;
+            border-color: $primary-hover;
             transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba($primary-color, 0.3);
+        }
+
+        &:active {
+            transform: translateY(0);
         }
     }
 
@@ -104,6 +112,7 @@
         gap: 8px;
         font-size: 14px;
         color: rgba($white, 0.9);
+        font-weight: $font-weight-medium;
         
         &::before {
             content: '📍';

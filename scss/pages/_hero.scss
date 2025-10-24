@@ -42,7 +42,7 @@
 
     &__title {
         font-size: clamp(3rem, 6vw, 4.5rem);
-        font-weight: 800;
+        font-weight: $font-weight-bold;
         line-height: 1.1;
         margin-bottom: 25px;
         text-transform: uppercase;
@@ -52,7 +52,7 @@
 
     &__subtitle {
         font-size: clamp(1.2rem, 2.5vw, 1.8rem);
-        font-weight: 400;
+        font-weight: $font-weight-normal;
         line-height: 1.4;
         margin-bottom: 40px;
         opacity: 0.95;

@@ -10,10 +10,11 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Jura", sans-serif;
   line-height: 1.6;
   color: #333;
   overflow-x: hidden;
+  font-weight: 400;
 }
 
 .container {
@@ -33,7 +34,7 @@ body {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(49, 48, 48, 0.37);
   backdrop-filter: blur(15px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
@@ -104,19 +105,26 @@ body {
 .header__phone {
   display: inline-flex;
   align-items: center;
-  padding: 10px 20px;
-  background: rgba(255, 255, 255, 0.2);
+  padding: 12px 24px;
+  background: #1B45CB;
   color: #fff;
   text-decoration: none;
-  border-radius: 25px;
+  border-radius: 8px;
   font-weight: 600;
   font-size: 14px;
   transition: all 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 2px solid #1B45CB;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 .header__phone:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background: #0d35a8;
+  border-color: #0d35a8;
   transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(27, 69, 203, 0.3);
+}
+.header__phone:active {
+  transform: translateY(0);
 }
 .header__address {
   display: flex;
@@ -124,6 +132,7 @@ body {
   gap: 8px;
   font-size: 14px;
   color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
 }
 .header__address::before {
   content: "📍";
@@ -203,7 +212,7 @@ body {
   color: #fff;
   text-decoration: none;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 700;
   transition: color 0.3s ease;
   text-align: center;
 }
@@ -222,9 +231,18 @@ body {
   font-size: 20px;
   font-weight: 600;
   transition: color 0.3s ease;
+  padding: 12px 30px;
+  background: #1B45CB;
+  border-radius: 8px;
+  border: 2px solid #1B45CB;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 .mobile-menu__phone:hover {
-  color: #1B45CB;
+  background: #0d35a8;
+  border-color: #0d35a8;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(27, 69, 203, 0.3);
 }
 .mobile-menu__address {
   color: rgba(255, 255, 255, 0.8);
@@ -232,6 +250,7 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
+  font-weight: 500;
 }
 .mobile-menu__address::before {
   content: "📍";
@@ -245,7 +264,7 @@ body {
   text-decoration: none;
   border: none;
   border-radius: 10px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 16px;
   text-transform: uppercase;
   cursor: pointer;
@@ -310,7 +329,7 @@ body {
 }
 .hero__title {
   font-size: clamp(3rem, 6vw, 4.5rem);
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.1;
   margin-bottom: 25px;
   text-transform: uppercase;
@@ -381,7 +400,7 @@ body {
   background: #1B45CB;
   color: #fff;
   border-radius: 8px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 18px;
   margin-top: 20px;
 }
@@ -418,7 +437,7 @@ body {
   font-style: italic;
 }
 .feedback__author {
-  font-weight: 600;
+  font-weight: 700;
   color: #333;
   font-size: 16px;
 }
